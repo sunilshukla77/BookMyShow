@@ -1,0 +1,30 @@
+logging:
+  config: classpath:log4j2.xml
+
+spring:
+  application:
+    name: BookMyShow
+
+  h2:
+    console:
+      enabled: trues
+
+  jpa:
+    show-sql: true
+    database: H2
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:bookMyShowDb
+    username: bookMyShow
+    password: W3lcome%%1212
+
+
+server:
+  port: 8081
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: /Users/sunil/log/book-my-show
+      pattern: "[%{yyyy-MM-dd HH:mm:ss.SSS}t] %h \"%r\" %s %b %Dms \"%{Referer}i\""
+      prefix: ${spring.profiles.active}_access
