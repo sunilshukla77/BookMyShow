@@ -9,9 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.book.my.show</groupId>
-	<artifactId>BookMyShow</artifactId>
+	<artifactId>book-my-show</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BookMyShow</name>
+	<packaging>jar</packaging>
 	<description>Movie Booking Portal</description>
 
 	<properties>
@@ -122,8 +123,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<!--				<configuration>-->
+<!--					<image>-->
+<!--						<name>$movies/{project.artifactId}</name>-->
+<!--					</image>-->
+<!--				</configuration>-->
 			</plugin>
 		</plugins>
+		<finalName>book-my-show</finalName>
 	</build>
 
 </project>

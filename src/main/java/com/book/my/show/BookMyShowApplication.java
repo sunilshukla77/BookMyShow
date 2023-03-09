@@ -15,3 +15,10 @@ public class BookMyShowApplication {
 	}
 
 }
+
+/*
+@SpringBootApplication = @SpringBootConfiguration  + @EnableAutoConfiguration  + @ComponentScan
+@SpringBootConfiguration = it will load all the properties defined in application.yml or properties file
+@EnableAutoConfiguration = Automatically prolerties file configured with the beans
+@ComponentScan:  Scan and load all beans
+ */
